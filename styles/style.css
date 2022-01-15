@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+body{
+    background-color:  hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+    width: 100vw;
+}
+
+main{  
+     
+    margin: auto;
+    min-height: 25rem;
+    min-width: 17rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+hr{
+    opacity: 10%;
+    width: 90%;
+    margin-left: 4%;
+    color: gray;
+}
+footer{
+    color: var(--soft-blue);
+}
+:root{
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --white: hsl(0, 0%, 100%);
+}
+.card{
+    width: 17rem;
+    height: 30rem;
+    background-color:hsl(216, 50%, 16%);
+    border-radius: 0.7rem;
+    box-shadow: 0px 3px 10px 5px hsl(217, 54%, 11%)
+}
+.card-image{
+    margin: 0;
+    display: flex;;
+    align-items: center;
+    justify-content: center;
+    
+}
+.card-image:hover .card-view{
+    opacity: 0.8;
+}
+.card-view{
+    opacity: 0;
+    position: absolute;
+    top: 38%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transition: .5s ease;
+    
+}
+.card-image-nft{
+    width: 90%;
+    height: 100%;
+    margin: 1rem 1rem;
+    padding: 0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.card-image:hover .card-image-nft{
+   opacity: 0.3;
+   transition: .5s ease;
+   backface-visibility: hidden;
+}
+.card-name{
+    color: var(--white);
+    padding: 0.4rem 1rem;
+    font-weight: 100;
+    font-size: 0.6rem;
+}
+.card-description{
+    color: var(--soft-blue);
+    margin: 0;
+    padding:  0.4rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 100;
+}
+.price-timer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    margin: 20px 0;
+    font-size: 0.7rem;
+}
+.price{
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+}
+.price-img{
+    width: 0.6srem;
+    height: 80%;
+}
+.price-label{
+    color: var( --cyan);
+    padding: 0 8px;
+}
+.timer{
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+}
+.timer-img{
+    width: 1rem;
+    height: 100%;
+}
+.timer-label{
+    color: var(--soft-blue);
+    padding: 0 5px;
+}
+.author{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 15px 18px 25px 18px;
+    font-size: 0.9rem;
+}
+.author-img{
+    width: 12%;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+}
+.author p{
+    color: var(--soft-blue);
+    padding: 0 13px ;
+}
+.author p span{
+color: var(--white);
+}
+.attribution{
+    display: flex;
+    align-content: flex-end;
+}
+@media (min-width: 375px){
+    main{
+        margin: 6rem 0 6rem 0;
+    }
+    .attribution{
+    display: flex;
+    align-content: flex-end;
+    }
+}
+    
